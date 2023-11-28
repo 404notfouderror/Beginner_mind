@@ -1,8 +1,4 @@
-﻿#include <iostream>
-#include <opencv2/highgui.hpp>
-
-using namespace std;
-using namespace cv;
+﻿#include "mind.h"
 
 int main()
 {
@@ -15,7 +11,7 @@ int main()
 
 	// Key Wait
 	waitKey(0);
-	*/
+	
 
 	// View Window Set
 	namedWindow("Yukina", WINDOW_AUTOSIZE);
@@ -56,6 +52,9 @@ int main()
 		if (waitKey(100) == 27)
 			break;
 	}
+	*/
+
+	ROI_Func();
 
 	return 0;
 }

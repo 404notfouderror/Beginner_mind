@@ -133,7 +133,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Beginner_mind.cpp" />
+    <ClCompile Include="ImageRead.cpp" />
+    <ClCompile Include="ROI.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="mind.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
