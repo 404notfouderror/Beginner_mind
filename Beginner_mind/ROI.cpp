@@ -30,3 +30,31 @@ bool ROI_Func() {
 	}
 	return true;
 }
+
+bool Draw()
+{
+	// blank Image 빈image 파일 출력
+	Mat img(512, 512, CV_8UC3, Scalar(0, 0, 0));
+	//  Scalar(B, G, R); RGB가 아닌 GBR 순서
+
+	// Circle 원 그리기
+	circle(img, Point(256, 256), 155, Scalar(0, 0, 255), 3, LINE_AA);
+
+	// Rect 사각형 그리기
+	rectangle(img, Point(30, 30), Point(150, 145), Scalar(255, 0, 0), FILLED);
+
+	// _--_ Test
+	rectangle(img, Point(0, 0), Point(img.size().width, img.size().height), Scalar(0, 255, 255), 4);
+
+	// image Show
+	while (true)
+	{
+		imshow("Image", img);
+
+		if (waitKey(100) == 27)
+			break;
+
+	}
+
+	return  true;
+}

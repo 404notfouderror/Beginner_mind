@@ -52,9 +52,14 @@ int main()
 		if (waitKey(100) == 27)
 			break;
 	}
+	
+
+	if (!ROI_Func())
+		return 0;
 	*/
 
-	ROI_Func();
+	if (!Draw())
+		return 0;
 
 	return 0;
 }
