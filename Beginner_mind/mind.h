@@ -9,3 +9,4 @@ using namespace std;
 
 bool ROI_Func();
 bool Draw();
+void DrawMouseEvent(int nEvent, int nX, int nY, int nflags, void* userdata);
