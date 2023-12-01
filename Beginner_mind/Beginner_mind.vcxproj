@@ -135,6 +135,7 @@
   <ItemGroup>
     <ClCompile Include="DrawLine.cpp" />
     <ClCompile Include="ImageRead.cpp" />
+    <ClCompile Include="Labeling.cpp" />
     <ClCompile Include="ROI.cpp" />
   </ItemGroup>
   <ItemGroup>

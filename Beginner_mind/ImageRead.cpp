@@ -60,15 +60,18 @@ int main()
 	// rectangle, circle draw
 	if (!Draw())
 		return 0;
-	*/
 
 	// Draw Line - mouseEvent
-	
 	Mat Image(400, 400, CV_8UC3, Scalar(255, 255, 255));
 	imshow("MouthEvent", Image);
 	setMouseCallback("MouthEvent", DrawMouseEvent, &Image);
 
 	waitKey(0);
+	*/
+
+	if (!Labeling())
+		return 0;
+
 
 	return 0;
 }
