@@ -67,11 +67,14 @@ int main()
 	setMouseCallback("MouthEvent", DrawMouseEvent, &Image);
 
 	waitKey(0);
-	*/
+	
 
 	if (!Labeling())
 		return 0;
+	*/
 
+	if (!Canny())
+		return 0;
 
 	return 0;
 }
