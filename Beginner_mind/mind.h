@@ -14,4 +14,4 @@ bool Draw();
 bool Labeling();
 bool Canny();
 
-void DrawMouseEvent(int nEvent, int nX, int nY, int nflags, void* userdata);
+void DrawMouseEvent(int nEvent, int nX, int nY, int nflags, void* userdata, Rect reObj);
