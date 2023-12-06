@@ -24,3 +24,61 @@ void DrawMouseEvent(int nEvent, int nX, int nY, int nflags, void* userdata)
 			}
 		}
 }
+
+/*
+
+
+#if 1
+Rect reObj(100, 100, 50, 50);
+bool isDragging = false;
+Point2i clickPoint;
+# endif
+
+void EventTset(int nEvent, int nX, int nY, int nflags, void* userdata)
+{
+
+	if (nEvent == EVENT_LBUTTONDOWN)
+	{
+		if (reObj.contains(Point(nX, nY)))
+		{
+			isDragging = true;
+			clickPoint = Point2i(nX, nY);
+		}
+	}
+	else if (nEvent == EVENT_MOUSEMOVE)
+	{
+		if (isDragging)
+		{
+			int nDeltaX = nX - clickPoint.x;
+			int nDeltaY = nY - clickPoint.y;
+
+			reObj.x += nDeltaX;
+			reObj.y += nDeltaY;
+
+			clickPoint = Point2i(nX, nY);
+		}
+	}
+	else if (nEvent == EVENT_LBUTTONUP)
+		isDragging = false;
+
+}
+
+
+	Mat Image(400, 400, CV_8UC3, Scalar(255, 255, 255));
+	namedWindow("Drag Rectangle", WINDOW_AUTOSIZE);
+	setMouseCallback("Drag Rectangle", EventTset);
+
+	while (true)
+	{
+		Mat clone = Image.clone();
+		rectangle(clone, reObj, Scalar(0, 0, 255));
+		imshow("Drag Rectangle", clone);
+
+		char key = waitKey(10);
+
+		if (key == 27)
+			break;
+	}
+
+
+*/
