@@ -2,8 +2,17 @@
 
 int main()
 {
-	if (!CVRange())
-		return 0;
+	// Display
+	while (true)
+	{
+		// Func
+
+		if (false)
+			return -1;
+	}
+
+
+
 
 	return 0;
 }
